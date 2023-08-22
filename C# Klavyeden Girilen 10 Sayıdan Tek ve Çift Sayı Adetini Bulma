@@ -1,0 +1,23 @@
+static void Main(string[] args)
+        {
+            int tekSayisi = 0, ciftSayisi = 0;
+            int sayi;
+            for (int i=1;i<=10;i++)
+            {
+                Console.Write("{0}. sayıyı girin : ", i);
+                sayi = Convert.ToInt32(Console.ReadLine());
+                if(sayi%2==0)
+                {
+                    ciftSayisi++;
+                }
+                else
+                {
+                    tekSayisi++;
+                }
+            }
+            Console.WriteLine("============================================");
+            Console.WriteLine("{0} adet tek {1} adet çift sayı girdiniz.",tekSayisi,ciftSayisi);
+            Console.ReadKey();
+ 
+        }
+ 
